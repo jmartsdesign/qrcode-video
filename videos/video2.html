@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DF Projectos CARTOON – JMArtsDesign</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <meta name="description" content="Assista ao vídeo BELL 41EP no JMArtsDesign." />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="brand">
+        <img src="../assets/logo.jpg" alt="Logo" class="logo" />
+        <div>
+          <h1>JMArtsDesign</h1>
+          <p>Montra de trabalhos desenvolvidos pelo artista Jorge Antunes. Trabalhos na área plástica, digital e 3D.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="video-card">
+        <h2>DF Projectos CARTOON</h2>
+        <p class="subtitle">
+          Vídeo que detalha o processo de criação do desenho, desde a etapa inicial até o resultado final. Esta iniciativa surge em um contexto em que a inteligência artificial está desvalorizando o trabalho
+        </p>
+
+        <div class="video-wrapper">
+          <!-- Substituir o ID do vídeo (depois de v=) -->
+          <iframe
+            src="https://www.youtube.com/embed/wfJAH_FippE?autoplay=1&rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <a
+          class="primary-button"
+          href="https://www.youtube.com/watch?v=wfJAH_FippE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Abrir no YouTube
+        </a>
+
+        <p class="small">
+          Escaneaste um QR e chegaste aqui — obrigado por assistir!  
+          Considera subscrever o canal para mais conteúdos.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> JMArtsDesign · Feito com ♥ e código.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
