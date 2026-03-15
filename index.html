@@ -4,145 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vídeos – Coleção</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #f5f5f5;
-      --card-bg: #ffffff;
-      --text: #111;
-      --muted: #666;
-      --accent: #111;
-      --radius: 18px;
-      --shadow: 0 8px 22px rgba(0,0,0,0.08);
-      --transition: 0.25s ease;
-    }
-
-    body {
-      margin: 0;
-      padding: 40px 24px;
-      font-family: "Inter", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 960px;
-    }
-
-    header {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.4rem;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    header p {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 26px;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
-      transition: transform var(--transition), box-shadow var(--transition);
-      cursor: pointer;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-    }
-
-    .thumb {
-      width: 100%;
-      aspect-ratio: 16/9;
-      border-radius: var(--radius);
-      background-size: cover;
-      background-position: center;
-      margin-bottom: 14px;
-    }
-
-    .title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-
-    .desc {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.4;
-    }
-
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-  </style>
+  
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-  <div class="container">
+  <div class="page">
+    
+    <div class="header">
+      <div class="brand">
+        <h1>Coleção de Vídeos</h1>
+      </div>
+    </div>
 
-    <header>
-      <h1>Coleção de Vídeos</h1>
-      <p>Explora os conteúdos através dos mini‑cards ou pelos QR codes.</p>
-    </header>
+    <div class="content">
+      
+      <div class="video-card">
+        <h2>Título do Vídeo 1</h2>
+        <p class="subtitle">Uma breve descrição artística e minimalista.</p>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/3qEmi_V-7GA" 
+            title="Vídeo 1"
+            allowfullscreen="">
+          </iframe>
+        </div>
+        <a href="videos/video1.html" class="primary-button">Ver Detalhes</a>
+      </div>
 
-    <div class="grid">
+      <div class="video-card">
+        <h2>DF Projectos CARTOON</h2>
+        <p class="subtitle">Texto curto que contextualiza o conteúdo.</p>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/wfJAH_FippE" 
+            title="DF Projectos CARTOON"
+            allowfullscreen="">
+          </iframe>
+        </div>
+        <a href="videos/video2.html" class="primary-button">Ver Detalhes</a>
+      </div>
 
-      <!-- CARD 1 -->
-      <a class="card" href="videos/video1.html">
-        <div class="thumb" style="background-image:url('https://img.youtube.com/vi/3qEmi_V-7GA/hqdefault.jpg');"></div>
-        <div class="title">Título do Vídeo 1</div>
-        <div class="desc">Uma breve descrição artística e minimalista.</div>
-      </a>
-
-      <!-- CARD 2 -->
-      <a class="card" href="videos/video2.html">
-        <div class="thumb" style="background-image:url('https://img.youtube.com/vi/wfJAH_FippE/hqdefault.jpg');"></div>
-        <div class="title">DF Projectos CARTOON</div>
-        <div class="desc">Texto curto que contextualiza o conteúdo.</div>
-      </a>
-
-      <!-- CARD 3 -->
-      <a class="card" href="videos/video3.html">
-        <div class="thumb" style="background-image:url('https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg');"></div>
-        <div class="title">Título do Vídeo 3</div>
-        <div class="desc">Descrição simples e elegante.</div>
-      </a>
-
-      <!-- Adicionar mais cards copiando o bloco acima -->
+      <div class="video-card">
+        <h2>Título do Vídeo 3</h2>
+        <p class="subtitle">Descrição simples e elegante.</p>
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/VIDEO_ID_3" 
+            title="Vídeo 3"
+            allowfullscreen="">
+          </iframe>
+        </div>
+        <a href="videos/video3.html" class="primary-button">Ver Detalhes</a>
+      </div>
 
     </div>
 
-    <footer>
+    <div class="footer">
       © <span id="year"></span> · Página minimalista artística
-    </footer>
+    </div>
 
   </div>
 
