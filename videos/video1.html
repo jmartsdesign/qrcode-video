@@ -6,6 +6,64 @@
   <title>BELL 41EP – JMArtsDesign</title>
   <link rel="stylesheet" href="../assets/style.css" />
   <meta name="description" content="Assista ao vídeo BELL 41EP no JMArtsDesign." />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    /* Estilos para as Redes Sociais no Rodapé */
+    .social-links {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .social-links a {
+      color: #a0a3b1; /* Cor muted baseada no design anterior */
+      font-size: 1.5rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+    }
+    .social-links a:hover {
+      color: #ff4b81; /* Cor accent */
+      transform: scale(1.1);
+    }
+
+    /* Estilos para o QR Code de Impressão */
+    .print-qr-container {
+      margin-top: 30px;
+      text-align: center;
+      padding: 20px;
+      background: #fff; /* Fundo branco para garantir leitura do QR */
+      color: #000;
+      border-radius: 12px;
+      display: inline-block;
+      width: auto;
+    }
+    .qr-code-img {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+    .print-label {
+      font-size: 0.8rem;
+      font-weight: bold;
+      display: block;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    /* Ocultar QR Code no ecrã se preferires que seja apenas para impressão */
+    /* Se quiseres que apareça sempre, apaga a linha abaixo */
+    @media screen { .print-qr-container { margin-top: 40px; } }
+
+    /* Forçar visibilidade e layout na impressão */
+    @media print {
+      .video-wrapper, .primary-button, .social-links { display: none; }
+      body { background: white; color: black; padding: 0; }
+      .page { box-shadow: none; width: 100%; }
+      .print-qr-container { display: block; margin: 0 auto; border: 1px solid #ccc; }
+    }
+  </style>
 </head>
 <body>
   <div class="page">
@@ -23,11 +81,10 @@
       <section class="video-card">
         <h2>BELL 41EP</h2>
         <p class="subtitle">
-          Vídeo que detalha o processo de criação do desenho, desde a etapa inicial até o resultado final. Esta iniciativa surge em um contexto em que a inteligência artificial está desvalorizando o trabalho
+          Vídeo que detalha o processo de criação do desenho, desde a etapa inicial até o resultado final. Esta iniciativa surge em um contexto em que a inteligência artificial está desvalorizando o trabalho.
         </p>
 
         <div class="video-wrapper">
-          <!-- Substituir o ID do vídeo (depois de v=) -->
           <iframe
             src="https://www.youtube.com/embed/3qEmi_V-7GA?autoplay=1&rel=0"
             title="YouTube video player"
@@ -46,6 +103,15 @@
           Abrir no YouTube
         </a>
 
+        <div class="print-qr-container">
+          <img 
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/watch?v=3qEmi_V-7GA" 
+            alt="QR Code do Vídeo" 
+            class="qr-code-img"
+          />
+          <span class="print-label">Digitalize para ver o vídeo</span>
+        </div>
+
         <p class="small">
           Escaneaste um QR e chegaste aqui — obrigado por assistir!  
           Considera subscrever o canal para mais conteúdos.
@@ -54,6 +120,12 @@
     </main>
 
     <footer class="footer">
+      <div class="social-links">
+        <a href="https://linkedin.com/in/TEU_PERFIL" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/TEU_PERFIL" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/TEU_PERFIL" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      
       <p>© <span id="year"></span> JMArtsDesign · Feito com ♥ e código.</p>
     </footer>
   </div>
