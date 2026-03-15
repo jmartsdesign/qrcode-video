@@ -31,11 +31,14 @@
       color: var(--text);
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
       width: 100%;
       max-width: 960px;
+      flex: 1;
     }
 
     header {
@@ -62,11 +65,11 @@
     }
 
     .card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
+      background: var(--bg-card);
+      border-radius: var(--radius-md);
       padding: 18px;
-      box-shadow: var(--shadow);
-      transition: transform var(--transition), box-shadow var(--transition);
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.2s, box-shadow 0.2s;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
@@ -80,7 +83,7 @@
     .thumb {
       width: 100%;
       aspect-ratio: 16/9;
-      border-radius: var(--radius);
+      border-radius: var(--radius-md);
       background-size: cover;
       background-position: center;
       margin-bottom: 14px;
@@ -103,6 +106,40 @@
       text-align: center;
       font-size: 0.85rem;
       color: var(--muted);
+      padding-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .social-icon {
+      width: 36px;
+      height: 36px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      filter: drop-shadow(0 0 4px rgba(255, 75, 129, 0.3));
+      transition: filter 0.2s;
+    }
+
+    .social-icon:hover {
+      filter: drop-shadow(0 0 8px rgba(255, 75, 129, 0.5));
+    }
+
+    .linkedin {
+      background-image: url('https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/9fd2/6ecf/-a6c/d-410d-9de7-eaf6b37f51e1/image.jpg?se=2026-03-15T01%3A30%3A36Z&sp=r&sv=2026-02-06&sr=b&sig=SofjieA2QeUkPf0r09%2BM%2BWSs2DQ88WNlAzGBt6Ks2zM%3D');
+    }
+
+    .instagram {
+      background-image: url('https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/9fd2/6ecf/-a6c/d-410d-9de7-eaf6b37f51e1/image.jpg?se=2026-03-15T01%3A30%3A36Z&sp=r&sv=2026-02-06&sr=b&sig=SofjieA2QeUkPf0r09%2BM%2BWSs2DQ88WNlAzGBt6Ks2zM%3D');
+    }
+
+    .twitter {
+      background-image: url('https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/9fd2/6ecf/-a6c/d-410d-9de7-eaf6b37f51e1/image.jpg?se=2026-03-15T01%3A30%3A36Z&sp=r&sv=2026-02-06&sr=b&sig=SofjieA2QeUkPf0r09%2BM%2BWSs2DQ88WNlAzGBt6Ks2zM%3D');
     }
   </style>
 </head>
@@ -138,12 +175,15 @@
         <div class="desc">Descrição simples e elegante.</div>
       </a>
 
-      <!-- Adicionar mais cards copiando o bloco acima -->
-
     </div>
 
     <footer>
       © <span id="year"></span> · Página minimalista artística
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" class="social-icon linkedin"></a>
+        <a href="https://www.instagram.com/seu-perfil" target="_blank" class="social-icon instagram"></a>
+        <a href="https://twitter.com/seu-perfil" target="_blank" class="social-icon twitter"></a>
+      </div>
     </footer>
 
   </div>
