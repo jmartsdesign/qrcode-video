@@ -65,5 +65,5 @@ Basta ativar o Pages no repositório e apontar para a branch principal.
 ## 📬 Autor
 
 **JMArts Design — Jorge Antunes**  
-Com um percurso que cruza a precisão do desenho técnico com a espontaneidade do Urban Sketching, Jorge Antunes explora o diálogo entre a arte tradicional e o ambiente digital. Mestre em Design e Multimédia pela Universidade de Coimbra e licenciado em Arte e Design (ESEC), dedica-se ao desenvolvimento de novos meios de expressão visual — do papel aos diários gráficos, da modelação 3D às tecnologias imersivas aplicadas ao património cultural.
+Jorge Antunes explora o diálogo entre a arte tradicional e o ambiente digital. Mestre em Design e Multimédia pela Universidade de Coimbra e licenciado em Arte e Design (ESEC), dedica-se ao desenvolvimento de novos meios de expressão visual — do papel aos diários gráficos, da modelação 3D às tecnologias imersivas aplicadas ao património cultural.
 
